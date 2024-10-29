@@ -1,0 +1,601 @@
+/* 
+body {
+    max-width: 100%;
+    clear: both;
+    font-family: 'Poppins', sans-serif;
+    background-color: #EEEEEE;
+}
+
+.sidebar {
+    background-color: #FEFFD2;
+    color:  rgb(4, 19, 32);;
+    height: 100vh;
+    width: 200px;
+}
+.sidebar .logo-name img{
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    margin-left: 10px;
+    margin-top: 30px;
+}
+
+.logo-name .nama-Pondok{
+    font-family: "Inknut Antiqua", serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 28px;
+    margin-left: 80px;
+    position: absolute;
+    margin-top: 45px;
+}
+
+
+.sidebar .menu {
+    margin-top: 180px;
+}
+
+.menu .item {
+    margin-top: 10px;
+}
+
+.menu .item a {
+    text-decoration: none;
+    color: rgb(4, 19, 32);
+    font-size: 18px;
+    font-weight: 500;
+    display: block;
+    padding-top : 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+
+    transition: background-color 0.3s ease;
+}
+.menu .item a span{
+    margin-left: 5px;
+}
+.menu .item a i{
+    margin-left: 10px;
+    font-size: 30px;
+}
+
+.menu .item a:hover {
+    padding-left: 10px;
+    background-color: #183D3D;
+    border-radius: 5px;
+    color: aliceblue;
+}
+
+.main-content{
+    background-color:#EEEEEE;
+    min-height: 100vh; /* Menambahkan min-height untuk mengisi ketinggian minimum layar
+    padding-left: 10px; /* Menambahkan padding untuk menjaga jarak antara main-content dan tepi layar
+    
+}
+.main-content .atas{
+    background-color: #005B41;
+    height: 20vh;
+}
+.main-content .toggle{
+    color: aliceblue;
+    padding: 10px;
+    font-size: 30px;
+}
+.main-content .toggle a{
+    color: aliceblue;
+}
+
+
+    .profile {
+        margin-top: 70px;
+        margin-left: 20px;
+    
+    }
+    .profile-picture {
+        
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        object-fit: cover;
+    }
+    
+    .profile-name {
+        font-size: 16px;
+       
+    }
+    
+    .ops .nav-link{
+        color: rgb(0, 0, 0);
+        font-size: 20px;
+        margin-left: 50px;
+        font-size: 16px;
+        font-weight: bold;
+        width: 30px;
+        height: 30px;
+        top: 0;
+        position: absolute;
+        margin-top: 510px;
+
+    }
+     */
+
+     body,html{
+        width: 100vw;
+        height: 100vh;
+        font-family: 'Poppins', sans-serif;
+        user-select: none;
+        overflow-y:auto;
+        box-sizing: border-box;
+        font-size: 14px;
+     }
+   
+
+     .container-fluid{
+        display: grid;
+        grid-template-columns: 16rem auto;
+        width: 100%;
+        margin: 0 auto;
+        background-color: #eee;
+        padding: 0;
+     }
+
+     .atas .logo img{
+        display: block;
+        width: 100%;
+     }
+     .logo p{
+        font-weight: 800;
+        font-size: 1.8rem;
+     }
+
+     .sidebar .menu{
+        font-weight: 500;
+        list-style-type: none;
+        padding: 0;
+        width: 100%;
+        margin-top: 3rem;
+     }
+     .menu .item{
+        border-radius: 10px;
+     }
+
+     .menu .profile{
+      margin-top: 40px;
+      margin-left: 25px;
+     }
+     .menu .profile span{
+      margin-left: 10px;
+     }
+     .menu .item a{
+        text-decoration: none;
+        color: darkslategray;
+        
+     }
+     aside{
+        background-color:#FEFFD2;
+        height: 100vh;
+        overflow-y: auto;
+        
+     }
+     aside .sb{
+        position: fixed;
+        width: 16rem;
+        height: 100%;
+        background-color:#FEFFD2;
+     }
+     aside .atas{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-top: 1.8rem;
+     }
+     aside .logo{
+        display: flex;
+        gap: 0.8rem;
+     }
+     aside .logo img{
+        height: 6rem;
+        width: 6rem;
+     }
+     aside .logo .nama-Pondok{
+        margin-top: 30px;
+        font-family: "Inknut Antiqua", serif;
+        font-weight: 600;
+        font-style: normal;
+     }
+     main .konten-atas .toggle{
+        font-size: 30px;
+        color: white;
+        
+     }
+
+     aside .sidebar{
+        display: flex;
+        flex-direction: column;
+        height: 89vh;
+        position: relative;
+        top: 3rem;
+     }
+     aside .sidebar a span{
+        font-size: 1.4rem;
+     }
+     aside .sidebar a{
+       transition: all 300ms ease;
+     }
+     aside .sidebar .item a{
+        display: flex;
+        gap: 1rem;
+        align-items: center;
+        position: relative;
+        height: 3.7rem;
+        transition: all 300ms ease;
+        font-size: 1.4rem;
+        margin-left: 2rem;
+        color: black;
+
+     }
+
+
+     aside .sidebar a.active{
+        background-color: #344955;
+        color: aliceblue;
+        left: 0;
+     }
+     aside .sidebar .item:hover{
+        background-color: #6295A2;
+     }
+     aside .sidebar .item a:hover{
+        color: #EEF7FF;
+        margin-left: 1rem;
+     }
+      aside .close{
+         display: none;
+      }
+
+     /* main */
+      .kotak2 .atas{
+         border: 1px solid #000;
+         padding: 2px;
+      }
+
+      .page h3{
+         margin-left: 2rem;
+         margin-top: 2rem;
+      }
+
+     .profile{
+         display: flex;
+         align-items: center;
+         margin-right: 40px;
+     }
+
+     .profile .foto{
+      width: 3rem;
+      height: 3rem;
+      border-radius: 50%;
+      object-fit: cover;
+     }
+
+
+     .foto img {
+      border-radius: 50%; /* Membuat gambar menjadi bundar */
+      width: 100%; /* Sesuaikan dengan ukuran yang diinginkan */
+      height: 100%; /* Sesuaikan dengan ukuran yang diinginkan */
+      object-fit: cover; /* Memastikan gambar mengisi area dengan proporsi yang benar */
+     }
+     .nav-link{
+      color: white;
+     }
+
+     .info-page {
+      padding-top: 1rem ;
+      padding-left: 5rem;
+      padding-bottom: 1rem ;
+      margin-left: 15rem;
+     }
+
+   .info-page .navbar{
+      width: 47rem;
+      border-radius: 10px;
+   }
+
+   .konten-utama{
+   margin-top: 2rem;
+   margin-left: 18rem;
+   margin-right: 5rem;
+   margin-bottom: 5rem;
+   /* display: grid; */
+   align-items: center;
+   justify-content: center;
+   /* grid-template-columns:repeat(2, 1fr) ; */
+   background-color: white;
+   border-radius: 10px;
+   width: 50rem;
+   padding: 10px;
+   box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.1); /* Bayangan */
+  
+      
+   }
+
+   .kotak2{
+      font-size: 16px;
+      margin-left: 10px;
+   }
+
+   .kotak2 .atas{
+      box-shadow: 2px 2px 4px 2px rgba(0, 0, 0, 0.1); /* Bayangan */
+  
+   }
+
+   .kotak1 img{
+      width: 100%;
+      
+   }
+     
+   .text-sambutan{
+      font-family: "EB Garamond", serif;
+      font-optical-sizing: auto;
+  }
+  .kotak1 .gambar{
+   justify-content: center;
+   align-items: center;
+  }
+
+  
+   /* main */
+
+   /* responsive */
+
+   @media screen and (max-width: 1207px){
+
+      /* .konten-utama{
+      grid-template-columns:repeat(1, 1fr) ;
+      }    */
+      .konten-utama{
+         margin-left: 2rem;
+      }
+
+ 
+      
+
+      /* aside .sb{
+         width: 6rem;
+      } */
+
+      .info-page {
+         padding-left: 0;
+         margin-left: 2rem;
+        }
+        .info-page .navbar{
+         width: 47rem;
+         border-radius: 10px;
+      }
+
+   }
+      @media screen and (max-width: 942px){
+
+         /* .konten-utama{
+         grid-template-columns:repeat(1, 1fr) ;
+         }    */
+     .container-fluid{
+      grid-template-columns: 5rem auto;
+     
+   }
+         .slide{
+            padding-left: 20px;
+         }
+         .konten-utama{
+            margin-left: 2rem;
+            width: 47rem;
+            margin-right: 0;
+         }
+
+         .sb .atas .logo p{
+            display: none;
+         }
+
+   
+         /* aside .sb{
+            width: 6rem;
+         } */
+   
+         .info-page {
+            padding-left: 0;
+            margin-left: 2rem;
+           }
+           .info-page .navbar{
+            width: 47rem;
+            border-radius: 10px;
+         }  
+          aside .sb{
+         width: 6rem;
+      }
+      .sidebar .item a span{
+         display: none;
+      }
+      .sidebar .item a i{
+         font-size: 2rem;
+      }
+      .menu .tombol span{
+         display: none;
+      }
+
+      .menu .profile span{
+         display: none;
+        }
+
+   }
+
+
+   @media screen and (max-width: 772px){
+   
+   
+      .konten-utama{
+         margin-left: 2rem;
+         width: 39.5rem;
+         margin-right: 0;
+    
+      }
+      .slide{
+         padding-left: 20px;
+      }
+      .sb .atas .logo p{
+         display: none;
+      }
+      
+      .info-page .navbar{
+         width: 39.5rem;
+         border-radius: 10px;
+      }
+      .menu .tombol span{
+         display: none;
+      }
+
+      .menu .profile span{
+         display: none;
+        }
+   
+   }
+
+   @media screen and (max-width: 652px) {
+      .konten-utama{
+         width: 36rem;
+      }
+      .info-page .navbar{
+         width: 36rem;
+      }
+   }
+   @media screen and (max-width: 612px) {
+      .konten-utama{
+         width: 34rem;
+         /* grid-template-columns:repeat(1, 1fr); */
+      }
+      .info-page .navbar{
+         width: 34rem;
+      }
+
+      .menu .tombol span{
+         display: none;
+      }
+
+      .menu .profile span{
+         display: none;
+        }
+   }
+
+   @media screen and (max-width: 588px) {
+      .konten-utama{
+         width: 27rem;
+         grid-template-columns:repeat(1, 1fr);
+         margin-left: 2rem;
+      }
+
+      .info-page .navbar{
+         width: 21rem;
+      }
+   
+   }
+   
+
+   @media screen and (max-width: 415px){
+
+      .container-fluid{
+         grid-template-columns:repeat(1, 1fr) ;
+        
+      }
+       aside .sb{
+         position: relative;
+         width: 100%;
+         
+       }
+
+       aside .sb .menu .item a{
+         justify-content: center;
+         align-content: center;
+       }
+       aside .sb .menu .item a{
+         justify-content: center;
+         align-content: center;
+       }
+       .sb .profile{
+         justify-content: center;
+         align-items: center;
+       }
+       
+
+      .konten-utama{
+         margin-left: 2rem;
+         width: 23.6rem;
+         margin-right: 0;
+
+      }
+      .info-page .navbar{
+         width: 23.6rem;
+      }
+
+      .sidebar .item a span{
+         display:flex;
+      }
+
+      .menu .tombol {
+         display: flex;
+      }
+
+      .menu .profile span{
+         display: flex;
+        }
+      
+   }
+
+
+   @media screen and (max-width: 360px){
+      .konten-utama{
+         margin-left: 2rem;
+         width: 17.6rem;
+         margin-right: 0;
+         grid-template-columns:repeat(1, 1fr);
+      }
+      
+      .slide{
+         padding-left: 20px;
+      }
+      .info-page .navbar{
+         width: 17.6rem;
+         border-radius: 10px;
+      }
+
+   }
+
+   @media screen and (max-width: 344px){
+      .konten-utama{
+         margin-left: 2rem;
+         width: 16rem;
+         margin-right: 0;
+         grid-template-columns:repeat(1, 1fr);
+      }
+      
+      .info-page .navbar{
+         width: 16rem;
+         border-radius: 10px;
+      }
+
+      
+   }
+
+   
+
+
+
+  
+
+  
+
+
+
+    
+
+    
+  
+
+    

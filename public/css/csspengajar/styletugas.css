@@ -1,0 +1,473 @@
+body,html{
+    width: 100vw;
+    height: 100vh;
+    font-family: 'Poppins', sans-serif;
+    user-select: none;
+    overflow-y:auto;
+    box-sizing: border-box;
+    font-size: 14px;
+ }
+
+
+ .container-fluid{
+    display: grid;
+    grid-template-columns: 16rem auto;
+    width: 100%;
+    margin: 0 auto;
+    background-color: #eee;
+    padding: 0;
+ }
+
+ .atas .logo img{
+    display: block;
+    width: 100%;
+ }
+ .logo p{
+    font-weight: 800;
+    font-size: 1.8rem;
+ }
+
+ .sidebar .menu{
+    font-weight: 500;
+    list-style-type: none;
+    padding: 0;
+    width: 100%;
+    margin-top: 3rem;
+ }
+ .menu .item{
+    border-radius: 10px;
+ }
+
+ .menu .profile{
+  margin-top: 40px;
+  margin-left: 25px;
+ }
+ .menu .profile span{
+  margin-left: 10px;
+ }
+ .menu .item a{
+    text-decoration: none;
+    color: darkslategray;
+    
+ }
+ aside{
+    background-color:#FEFFD2;
+    height: 100vh;
+    overflow-y: auto;
+    
+ }
+ aside .sb{
+    position: fixed;
+    width: 16rem;
+    height: 100%;
+    background-color:#FEFFD2;
+ }
+ aside .atas{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 1.8rem;
+ }
+ aside .logo{
+    display: flex;
+    gap: 0.8rem;
+ }
+ aside .logo img{
+    height: 6rem;
+    width: 6rem;
+ }
+ aside .logo .nama-Pondok{
+    margin-top: 30px;
+    font-family: "Inknut Antiqua", serif;
+    font-weight: 600;
+    font-style: normal;
+ }
+ main .konten-atas .toggle{
+    font-size: 30px;
+    color: white;
+    
+ }
+
+ aside .sidebar{
+    display: flex;
+    flex-direction: column;
+    height: 89vh;
+    position: relative;
+    top: 3rem;
+ }
+ aside .sidebar a span{
+    font-size: 1.4rem;
+ }
+ aside .sidebar a{
+   transition: all 300ms ease;
+ }
+ aside .sidebar .item a{
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    position: relative;
+    height: 3.7rem;
+    transition: all 300ms ease;
+    font-size: 1.4rem;
+    margin-left: 2rem;
+    color: black;
+
+ }
+
+
+ aside .sidebar a.active{
+    background-color: #344955;
+    color: aliceblue;
+    left: 0;
+ }
+ aside .sidebar .item:hover{
+    background-color: #6295A2;
+ }
+ aside .sidebar .item a:hover{
+    color: #EEF7FF;
+    margin-left: 1rem;
+ }
+  aside .close{
+     display: none;
+  }
+
+ /* main */
+  .kotak2 .atas{
+     border: 1px solid #000;
+     padding: 2px;
+  }
+
+  .page h3{
+     margin-left: 2rem;
+     margin-top: 2rem;
+  }
+
+ .profile{
+     display: flex;
+     align-items: center;
+     margin-right: 40px;
+ }
+
+ .profile .foto{
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  object-fit: cover;
+ }
+
+
+ .foto img {
+  border-radius: 50%; /* Membuat gambar menjadi bundar */
+  width: 100%; /* Sesuaikan dengan ukuran yang diinginkan */
+  height: 100%; /* Sesuaikan dengan ukuran yang diinginkan */
+  object-fit: cover; /* Memastikan gambar mengisi area dengan proporsi yang benar */
+ }
+ .nav-link{
+  color: white;
+ }
+
+ .info-page {
+  padding-top: 1rem ;
+  padding-left: 5rem;
+  padding-bottom: 1rem ;
+  margin-left: 18rem;
+ }
+
+.info-page .navbar{
+  width: 47rem;
+  border-radius: 10px;
+}
+
+.konten-utama{
+    margin-left: 7rem;
+    margin-right: 7rem;
+}
+/* 
+.konten-utama .card{
+box-shadow: #000;
+} */
+
+.konten-utama table{
+    margin-top: 1rem;
+}
+.tombol-tambah a{
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+}
+
+.form-group{
+   padding: 1rem;
+}
+
+.konten {
+   height: 200px; /* Adjust the height value as needed */
+}
+
+
+/* tugas */
+.card-tugas{
+   background-color: #1B4242;
+}
+
+
+/* tugas */
+
+   /* responsive */
+
+   @media screen and (max-width: 1207px){
+
+    /* .konten-utama{
+    grid-template-columns:repeat(1, 1fr) ;
+    }    */
+    .konten-utama{
+       margin-left: 2rem;
+    }
+   
+
+    /* aside .sb{
+       width: 6rem;
+    } */
+
+    .info-page {
+       padding-left: 0;
+       margin-left: 2rem;
+      }
+      .info-page .navbar{
+       width: 47rem;
+       border-radius: 10px;
+    }
+
+ }
+ 
+    @media screen and (max-width: 942px){
+
+ 
+       .slide{
+          padding-left: 20px;
+       }
+       .konten-utama{
+          margin-left: 2rem;
+          width: 47rem;
+          margin-right: 0;
+       }
+       .card{
+         margin-left: 2rem;
+          width: 47rem;
+          margin-right: 0;
+       }
+
+       .sb .atas .logo p{
+          display: none;
+       }
+
+ 
+       /* aside .sb{
+          width: 6rem;
+       } */
+ 
+       .info-page {
+          padding-left: 0;
+          margin-left: 2rem;
+         }
+         .info-page .navbar{
+          width: 47rem;
+          border-radius: 10px;
+       }  
+        aside .sb{
+       width: 6rem;
+    }
+    .sidebar .item a span{
+       display: none;
+    }
+    .sidebar .item a i{
+       font-size: 2rem;
+    }
+    .menu .tombol span{
+       display: none;
+    }
+
+    .menu .profile span{
+       display: none;
+      }
+
+ }
+
+ @media screen and (max-width: 913px) {
+   .konten-utama{
+      width: 36rem;
+      margin-left: 2rem;
+   }
+   .info-page .navbar{
+      width: 36rem;
+      margin-left: 2rem;
+   }
+   aside .sb{
+      width: 6rem;
+   }
+}
+
+
+
+ @media screen and (max-width: 773px){
+ 
+   .container-fluid{
+      grid-template-columns: 3rem auto;
+   }
+ 
+    .konten-utama{
+       margin-left: 2rem;
+       width: 39.5rem;
+       margin-right: 0;
+       
+    }
+
+    .navv{
+      margin-left: 2rem;
+    }
+    .slide{
+       padding-left: 20px;
+    }
+    .sb .atas .logo p{
+       display: none;
+    }
+    
+    .info-page .navbar{
+       width: 39.5rem;
+       border-radius: 10px;
+    }
+    .menu .tombol span{
+       display: none;
+    }
+
+    .menu .profile span{
+       display: none;
+      }
+ 
+ }
+ 
+
+ 
+
+ @media screen and (max-width: 652px) {
+    .konten-utama{
+       width: 36rem;
+    }
+    .info-page .navbar{
+       width: 36rem;
+    }
+ }
+ @media screen and (max-width: 612px) {
+    .konten-utama{
+       width: 34rem;
+       /* grid-template-columns:repeat(1, 1fr); */
+    }
+    .info-page .navbar{
+       width: 34rem;
+    }
+
+    .menu .tombol span{
+       display: none;
+    }
+
+    .menu .profile span{
+       display: none;
+      }
+ }
+
+ @media screen and (max-width: 588px) {
+    .konten-utama{
+       width: 21rem;
+       grid-template-columns:repeat(1, 1fr);
+    }
+    .info-page .navbar{
+       width: 21rem;
+    }
+ 
+ }
+ 
+
+ @media screen and (max-width: 404px){
+
+    .container-fluid{
+       grid-template-columns:repeat(1, 1fr) ;
+      
+    }
+     aside .sb{
+       position: relative;
+       width: 100%;
+       
+     }
+
+     aside .sb .menu .item a{
+       justify-content: center;
+       align-content: center;
+     }
+     aside .sb .menu .item a{
+       justify-content: center;
+       align-content: center;
+     }
+     .sb .profile{
+       justify-content: center;
+       align-items: center;
+     }
+     
+
+    .konten-utama{
+       margin-left: 2rem;
+       width: 23.6rem;
+       margin-right: 0;
+
+    }
+    .info-page .navbar{
+       width: 23.6rem;
+    }
+
+    .sidebar .item a span{
+       display:flex;
+    }
+
+    .menu .tombol {
+       display: flex;
+    }
+
+    .menu .profile span{
+       display: flex;
+      }
+    
+ }
+
+
+ @media screen and (max-width: 360px){
+    .konten-utama{
+       margin-left: 2rem;
+       width: 17.6rem;
+       margin-right: 0;
+       grid-template-columns:repeat(1, 1fr);
+    }
+    
+    .slide{
+       padding-left: 20px;
+    }
+    .info-page .navbar{
+       width: 17.6rem;
+       border-radius: 10px;
+    }
+
+ }
+
+ @media screen and (max-width: 344px){
+    .konten-utama{
+       margin-left: 2rem;
+       width: 16rem;
+       margin-right: 0;
+       grid-template-columns:repeat(1, 1fr);
+    }
+    
+    .info-page .navbar{
+       width: 16rem;
+       border-radius: 10px;
+    }
+
+    
+ }

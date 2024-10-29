@@ -1,0 +1,89 @@
+.menu .item{
+    position: relative;
+    cursor: pointer;
+}
+.sidebar .item a .dropdown{
+    position: absolute;
+    right: 0;
+    margin-right: 20px;
+}
+.sidebar .menu .item .sub-menu a{
+    padding-left: 30px;
+
+}
+
+.sidebar .menu .sub-btn{
+    font-size: 16px;
+}
+
+.sub-menu {
+    display: none;
+  }
+.sub-menu a{
+    font-size: 10px;
+  }
+  .up-arrow {
+    transform: rotate(180deg);
+  }
+
+  .palidasi{
+    width: 200px;
+    margin-left: 100px;
+  }
+  .alert {
+    position: relative;
+    padding: 0.75rem 1rem; /* Mengurangi padding untuk ukuran yang lebih kecil */
+    margin-bottom: 0.75rem; /* Mengurangi margin bottom */
+    border: 1px solid transparent;
+    border-radius: 0.25rem;
+    transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
+    font-size: 14px; /* Menyesuaikan ukuran font */
+}
+
+.alert-success {
+    background-color: #d4edda;
+    border-color: #c3e6cb;
+    color: #155724;
+}
+
+.alert-danger {
+    background-color: #f8d7da;
+    border-color: #f5c6cb;
+    color: #721c24;
+}
+
+.alert-dismissible {
+    padding-right: 3rem; /* Mengurangi padding right untuk membuat tempat close button lebih kecil */
+}
+
+.alert-dismissible .close {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 0.75rem 1rem; /* Mengurangi padding close button */
+    color: inherit;
+}
+
+/* Animation for hiding alerts */
+.alert-hide {
+    transform: translateY(-100%);
+    opacity: 0;
+}
+
+
+        .notification {
+            padding: 15px;
+            margin: 10px 0;
+            border: 1px solid transparent;
+            border-radius: 4px;
+        }
+        .notification-success {
+            color: #3c763d;
+            background-color: #dff0d8;
+            border-color: #d6e9c6;
+        }
+        .notification-error {
+            color: #a94442;
+            background-color: #f2dede;
+            border-color: #ebccd1;
+        }

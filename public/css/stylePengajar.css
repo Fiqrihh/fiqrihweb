@@ -1,0 +1,281 @@
+
+
+
+body{
+    max-width: 100%;
+    margin: auto;
+    clear: both;
+    font-family: 'Poppins', sans-serif;
+    background-color: #EEEEEE;
+}
+
+/* sidebar */
+.ly_sidebar{
+    width: 250px;
+    background-color: #d2d3ff;
+    border-radius: 5px;
+}
+
+.sidebar{
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+   
+}
+
+.sidebar .logo-name img{
+    width: 80px;
+    height: 80px;
+    position: absolute;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+
+.logo-name .nama-Pondok{
+    font-family: "Inknut Antiqua", serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 28px;
+    margin-left: 100px;
+    position: absolute;
+    margin-top: 35px;
+}
+.sidebar .menu{
+    margin-top: 180px ;
+    width: 240px;
+    position: fixed;
+    left: 0;
+    padding-left: 1px;
+    cursor: pointer;
+}
+
+.sidebar .menu .item{
+    display: block;
+    font-size: 20px;
+    border-radius: 10px;
+    padding: 14px;
+    font-weight: 600;
+}.menu a{
+    text-decoration: none;
+    color: #020000;
+}
+
+.item .text{
+    margin-left: 60px;
+}
+
+.item .bx{
+position: fixed;
+font-size: 30px;
+left: 0;
+margin-left: 30px;
+}
+
+.sidebar .menu .item:hover {
+    background-color: gray;
+}
+
+.sidebar .menu .item:hover a{
+    color: aliceblue;  
+}
+
+/* sidebar */
+
+
+/* bagian atas */
+
+.profile-data{
+padding-top: 20px;
+}
+.profile {
+    padding-top: 20px;
+    margin-right: 30px;
+    
+}
+.profile-picture {
+    margin-top: 500px;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    object-fit: cover;
+    position: absolute;
+}
+
+.profile-name {
+    margin-top: 10px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.ops .nav-link{
+    color: rgb(0, 0, 0);
+    font-size: 20px;
+    margin-top: 470px;
+    margin-left: 50px;
+    font-size: 16px;
+    font-weight: bold;
+    width: 30px;
+    height: 30px;
+    position: absolute;
+}
+
+.dropdown-menu {
+    font-size: 14px; /* Atur ukuran font pada daftar dropdown */
+    width: 120px; /* Atur lebar daftar dropdown */
+}
+
+.header-atas .ops{
+    top: 33px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    right: 20px;
+    padding: 0;
+    position: absolute;
+}
+
+.dropdown-item {
+    padding: 5px 10px; /* Atur padding pada setiap item daftar */
+    list-style-type: none;
+}
+
+ul {
+    list-style-type: none; /* Menghilangkan gaya daftar default */
+}
+
+.dropdown-menu .dropdown-item {
+    color: black !important; /* Menghitamkan teks pada item dropdown */
+    
+}
+
+.ops .nav-item{
+    color: #ffffff;
+}
+ .navbar{
+    width: 770px;
+    height: 60px;
+    border-radius: 10px; 
+    left: 360px;
+    position: absolute;
+    top: 82px;
+    z-index: 1000;
+ }
+
+  .header-atas{
+    width: 1286px;
+    height: 110px;
+    margin-left: 238px;
+    background-color: #005B41;
+    border-radius: 0px 0px 0px 5px;
+ }
+ .toggle{
+    width: 100px;
+    height: 50px;
+    position: fixed; 
+    padding: 5px;
+    position:absolute;
+ }
+
+ .toggle .bx-menu{
+    color: aliceblue;
+    font-size: 40px;
+}
+
+
+/* bagian atas */
+
+/* konten Dashboard*/
+.tentang{
+    position: absolute;
+    padding-left: 550px;
+}
+
+.sub-kotak2 .profile{
+    display: flex;
+    flex-direction: column;
+    gap: 10px; /* Jarak antar elemen di dalam .profile */
+
+}
+
+.kotak {
+    width: 770px;  /* Width of the box */
+    height: 350px; /* Height of the box */
+    background-color: white;  /* Background color of the box */
+    border: 1px solid #ccc;  /* Optional: A border to make it more visible */
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.1);  /* Optional: A shadow for better aesthetics */
+    margin: 20px;  /* Optional: Space around the box */
+    justify-content: center;
+    position: absolute;
+    margin-left: 350px;
+    margin-top: 40px;
+    border-radius: 10px;
+}
+
+.kotak .sub-kotak{
+    margin: 25px 0px 25px 25px;
+    width: 300px;
+    height: 300px;
+    background-color: #ffffff;
+    position: absolute;
+}
+
+.kotak .sub-kotak img{
+    width: 300px;
+    height: 300px;
+}
+
+.kotak .sub-kotak2{
+    margin-left: 350px;
+    margin-top: 30px;
+    margin-bottom: 25px;
+    margin-right: 25px;
+    width: 400px;
+    height: 300px;
+    background-color: rgb(255, 255, 255);
+}
+
+.text-sambutan{
+    font-family: "EB Garamond", serif;
+    font-optical-sizing: auto;
+}
+
+.text-footer{
+    position: absolute;
+    margin-top: 480px;
+    margin-left: 300px;
+}
+
+/* konten Dashboard */
+
+/* ======================================================================================================== */
+/* konten Materi */
+
+.daftar-materi{
+     width: 770px;  /* Width of the box */
+    height: 350px; /* Height of the box */
+    background-color: white;  /* Background color of the box */
+    border: 1px solid #ccc;  /* Optional: A border to make it more visible */
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.1);  /* Optional: A shadow for better aesthetics */
+    margin: 20px;  /* Optional: Space around the box */
+    justify-content: center;
+    position: absolute;
+    margin-left: 350px;
+    margin-top: 40px;
+    border-radius: 10px;
+}
+
+.tabel-materiH{
+    text-align: center;
+}
+.tambah-materi{
+    margin: 5px;
+    position: absolute;
+}
+
+.daftar-materi .table{
+    margin-top: 20px;
+}
+
+/* konten Materi */
+/* ======================================================================================================== */

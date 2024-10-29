@@ -1,0 +1,48 @@
+body{
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    background-image: url('gambar/bg1.png');
+    width: 80vh;
+    height: 70vh;
+}
+
+.institut{
+    width: 100vh;
+    margin-top: 70px;
+    margin-left: 555px;
+}
+
+.institut img{
+    width: 70px;
+    height: 70px;
+}
+
+.institut {
+        font-family: "Annie Use Your Telescope", cursive;
+        font-weight: 220;
+        font-style: small;
+}
+
+.card{
+    margin-left: 540px;
+    margin-top: 15px;
+    width: 410px;
+    height: 400px;
+}
+
+.card .hd-card{
+    font-family: "Rubik Glitch", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    margin-left: 35px;
+    margin-top: 20px;
+}
+
+.footer{
+    margin-top: 20px;
+    width: 900px;
+    margin-left: 600px;
+
+}
+
